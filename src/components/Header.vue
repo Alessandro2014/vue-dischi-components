@@ -1,11 +1,11 @@
 <template>
    <header>
         <div class="container">
-          <!-- <img src="images/logo.png" />
+          <img src="@//assets/img/logo.png" />
           <select v-model="selecteGenre">
             <option>All</option>
-            <option v-for="genre in genreList">{{ genre }}</option>
-          </select> -->
+            <option v-for="(genre, index) in genreList" :key="index">{{ genre }}</option>
+          </select>
         </div>
       </header>
 </template>
